@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+:root {
+    --color_text-primary: #dadada;
+    --card_background-color: rgba(247, 240, 232, 0.932);
+    /*Text Size*/
+    --box_shadow-primary: 0px 6px 40px -20px rgba(24, 24, 24, 0.2);
+    --box_shadow-hover: 0px 6px 50px -20px rgba(176, 180, 163, 0.315);
+
+
+}
+
+body {
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.logo a{
+    transition: 250ms;
+}
+.logo a:hover{
+    transform: scale(1.1);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 20px 10px rgba(254, 255, 236, 0.185);
+}
+
+.logo img {
+    display: block;
+    width: 190px;
+    height: 170px;
+
+
+}
+
+.login-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-container {
+    border: 1px solid rgb(221, 203, 203);
+    border-radius: 5px;
+
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 5px 40px rgba(197, 195, 195, 0.226);
+    position: relative;
+
+}
+
+.form-container input {
+    margin-bottom: 15px;
+    font-weight: 400;
+    border: none;
+    display: block;
+    height: 30px;
+    width: 250px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.568);
+    outline: none;
+    font-size: 15px;
+    padding: 0px 8px 0px 8px;
+}
+
+.form-container .change {
+    position: absolute;
+    width: 90%;
+    height: 30px;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(221, 203, 203);
+
+}
+
+.form-container .change a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.form-container .change a:hover {
+    color: darkslategrey;
+    text-decoration: underline;
+}
+
+.submit {
+    border-radius: 3px;
+    background-color: rgba(15, 14, 14, 0.945);
+    font-size: 14px;
+    color: white;
+}
+
+.submit:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.208);
+    color: rgba(243, 253, 204, 0.966);
+    cursor: pointer;
+
+}
